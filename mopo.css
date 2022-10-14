@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(150deg, hsl(0 0% 95%) 55%, black calc(50% + 1px));
+  font-family: "Inter", sans-serif;
+  background-attachment: fixed;
+}
+
+.container {
+  padding-top: 5.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 12rem;
+  padding-left: 16.5rem;
+}
+
+p {
+  color: hsl(0, 0%, 50%);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding-left: 17.7rem;
+  padding-top: 0.5rem;
+}
+
+.button-wrapper {
+  width: 23rem;
+  padding-left: 16rem;
+  translate: 0 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.buttons .btn {
+  padding: 5px;
+  background: #e6e6e6;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.buttons .btn::before {
+  font-family: FontAwesome;
+  font-size: 1.3rem;
+}
+.buttons .btn-email::before {
+  content: "@";
+}
+.buttons .btn-github::before {
+  content: "";
+}
+.buttons .btn-insta::before {
+  content: "";
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: white;
+}
+
+/* This is from the udemy html and css course*/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  padding-right: 10rem;
+  padding-top: 2rem;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgba(83, 78, 78, 0.377);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 0.7rem 1rem;
+  border-radius: 9px;
+  color: white;
+  background-color: black;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: red;
+}
