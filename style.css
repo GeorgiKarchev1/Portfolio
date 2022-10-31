@@ -8,120 +8,30 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-.section {
-  padding: 45px 0;
+body {
+  background-image: url("variant3.gif");
+  background-position: center;
+  background-size: cover;
 }
 
-.container {
-  width: 90%;
-}
-
-h1 {
-  font-size: 3em;
-}
-p {
-  color: rgb(99, 96, 96);
-  font-size: 1em;
-  padding-left: 45px;
-}
-
-.page-header {
-  display: inline;
-  padding: 1.8rem;
-}
-
-li {
-  display: inline;
-}
-
-ul {
-  display: flex;
-  padding-right: 0.5em;
-  gap: 1rem;
-  justify-content: flex-end;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.active {
+.enter {
   color: white;
-  background-color: black;
-  border-radius: 9px;
-  padding: 0.7rem 1rem;
+  font-size: 2.5rem;
+  z-index: 99;
+  padding-top: 35rem;
+  font-weight: bold;
+  text-align: center;
+  animation: enter 1s ease-in-out infinite alternate;
 }
 
-.buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-.buttons .btn {
-  padding: 5px;
-  background: #e6e6e6;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  display: block;
-  color: #000;
-  text-decoration: none;
-}
-.buttons .btn::before {
-  font-family: FontAwesome;
-  font-size: 1.3rem;
-}
-.buttons .btn-email::before {
-  content: "@";
-}
-.buttons .btn-github::before {
-  content: "";
-}
-.buttons .btn-insta::before {
-  content: "";
-}
-
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@-webkit-keyframes enter {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 20px #fff, 0 0 40px #000,
+      0 0 50px #000, 0 0 20px #000, 0 0 20px #000;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    padding-right: 40px;
-  }
-
-  .button-wrapper {
-    padding-top: 10px;
-  }
-
-  .nz {
-    padding-top: 230px;
-    padding-left: 60px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 1.9rem;
-  }
-
-  p {
-    font-size: 0.8rem;
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 20px #fff,
+      0 0 60px #fff, 0 0 20px #fff, 0 0 20px #fff;
   }
 }
