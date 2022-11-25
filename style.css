@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url("variant3.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.enter {
+  color: white;
+  font-size: 2.5rem;
+  z-index: 99;
+  padding-top: 35rem;
+  font-weight: bold;
+  text-align: center;
+  animation: enter 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes enter {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 20px #fff, 0 0 40px #000,
+      0 0 50px #000, 0 0 20px #000, 0 0 20px #000;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 20px #fff,
+      0 0 60px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  }
+}
