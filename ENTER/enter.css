@@ -109,6 +109,13 @@ a {
     padding-top: 1rem;
     padding-left: 1.5rem;
   }
+
+  body {
+    background-image: url(https://images-ext-2.discordapp.net/external/e0lM5cjzAfzqU2oahBh4lfAqc0wItfOXCU_Qiu-c7GI/%3Fresize%3D600%252C432%26quality%3D80%26strip%3Dall%26ssl%3D1/https/i1.wp.com/windowscustomization.com/wp-content/uploads/2019/10/Blanc-Noir.gif);
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -123,7 +130,7 @@ a {
     flex-wrap: wrap;
     align-content: center;
     padding-top: 12rem;
-    padding-left: 3rem;
+    padding-left: 7.5rem;
   }
 
   .info {
