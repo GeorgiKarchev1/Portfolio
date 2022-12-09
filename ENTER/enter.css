@@ -13,11 +13,11 @@ html {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
 }
 
 .name {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .info {
@@ -37,23 +37,22 @@ li {
 
 ul {
   display: flex;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
+  margin-left: 1rem;
   gap: 1rem;
   justify-content: flex-end;
+  background-color: #0C2214;
+  background-position: center;
+  width: 64rem;
+  height: 5rem;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.active {
-  color: white;
-  background-color: black;
-  border-radius: 9px;
-  padding: 0.7rem 1rem;
-}
 
 .buttons {
   display: flex;
@@ -111,7 +110,6 @@ a {
   }
 
   body {
-    background-image: url(https://images-ext-2.discordapp.net/external/e0lM5cjzAfzqU2oahBh4lfAqc0wItfOXCU_Qiu-c7GI/%3Fresize%3D600%252C432%26quality%3D80%26strip%3Dall%26ssl%3D1/https/i1.wp.com/windowscustomization.com/wp-content/uploads/2019/10/Blanc-Noir.gif);
     background-repeat-y: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
@@ -121,16 +119,14 @@ a {
 @media screen and (min-width: 500px) {
   .name {
     font-size: 3rem;
-    padding-left: 1.5rem;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     padding-top: 12rem;
-    padding-left: 7.5rem;
   }
 
   .info {
