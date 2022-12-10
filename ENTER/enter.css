@@ -8,6 +8,10 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: hsl(127, 20%, 9%);
+}
+
 .section {
   padding: 45px 0;
 }
@@ -28,7 +32,6 @@ html {
 
 .page-header {
   display: inline;
-  padding: 1.8rem;
 }
 
 li {
@@ -37,22 +40,16 @@ li {
 
 ul {
   display: flex;
-  padding-right: 0.5rem;
-  margin-left: 1rem;
   gap: 1rem;
   justify-content: flex-end;
-  background-color: #0C2214;
   background-position: center;
-  width: 64rem;
-  height: 5rem;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
-
 
 .buttons {
   display: flex;
@@ -61,11 +58,10 @@ a {
 }
 .buttons .btn {
   padding: 5px;
-  background: #e6e6e6;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  background: rgb(50, 120, 79);
+  box-shadow: 0 3px 20px rgb(20 218 61);
   cursor: pointer;
   display: block;
-  color: #000;
   text-decoration: none;
 }
 .buttons .btn::before {
@@ -88,6 +84,7 @@ a {
 
 @media screen and (min-width: 242px) {
   .name {
+    color: white;
     font-size: 2rem;
     padding-left: 1.5rem;
   }
@@ -100,7 +97,17 @@ a {
     padding-top: 13rem;
   }
 
+  ul {
+    background-color: hsl(127, 17%, 12%);
+    padding: 2rem 1rem;
+  }
+
+  a {
+    color: white;
+  }
+
   .info {
+    color: rgb(156 163 175);
     font-size: 0.8rem;
   }
 
@@ -108,11 +115,21 @@ a {
     padding-top: 1rem;
     padding-left: 1.5rem;
   }
+}
+/* New navbar */
+@media screen and (min-width: 1020px) {
+  ul {
+    background-color: hsl(127, 17%, 12%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 6rem;
+  }
 
-  body {
-    background-repeat-y: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
+  header {
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 
